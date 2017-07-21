@@ -45,7 +45,7 @@ jobs:
           command: |
             . venv/bin/activate
             python start_mothership.py test
-			python start_basic_worker.py test
+            python start_basic_worker.py test
 
       - store_artifacts:
           path: test-reports
