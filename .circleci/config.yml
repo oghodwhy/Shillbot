@@ -44,8 +44,8 @@ jobs:
           name: run tests
           command: |
             . venv/bin/activate
-            python start_basic_worker.py test
             python start_mothership.py test
+            python start_basic_worker.py test
             python test_mothership_basic.py test
             python test_worker_basic.py test
 
