@@ -42,11 +42,9 @@ jobs:
       # run tests!
       - run:
           name: run tests
-          test:
-
-             override:
-
-                 - python -m unittest discover
+          command: |
+            . venv/bin/activate
+            python -m unittest discover
 
       - store_artifacts:
           path: test-reports
