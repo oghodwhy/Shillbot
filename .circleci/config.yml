@@ -42,11 +42,14 @@ jobs:
       # run tests!
       - run:
           name: run tests
-              test:
+          command: |
+            . venv/bin/activate
+        
+    test:
 
-                override:
+        override:
 
-                    - python -m unittest discover
+            - python -m unittest discover
 
 
 
