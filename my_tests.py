@@ -18,7 +18,8 @@ if __name__ == "__main__":
     worker = BasicUserParseWorker("https://www.reddit.com/user/Chrikelnel")
     worker.run()
 
-
+    #check basic tests still work
+    test_worker_basic.test_worker_parsing()
 
 
 
