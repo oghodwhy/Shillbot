@@ -1,1 +1,5 @@
+test:
 
+  override:
+
+    - python -m unittest discover
